@@ -81,7 +81,13 @@ public class ArrayMain {
     }
 
     private static int[] createNumberArray(int numElements) {
+        // create random-generator object
         Random rand = new Random();
+        
+        // set the seed, so that we always get the same "random" sequence
+        rand.setSeed(38274899339428L);
+        
+        // return the object
         return rand.ints(numElements, -1000, 1001).toArray();
     }
 }
