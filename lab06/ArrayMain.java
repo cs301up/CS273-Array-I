@@ -27,7 +27,7 @@ public class ArrayMain {
 
         // ***** CHECKPOINT 1 *****
         // Print the numbers, followed by a line of dashes
-
+        
 
         // ***** CHECKPOINT 2 *****
         // Compute/print the average of the numbers
@@ -87,7 +87,17 @@ public class ArrayMain {
         // set the seed, so that we always get the same "random" sequence
         rand.setSeed(38274899339428L);
         
+        // generate number that determines whether:
+        // - 0 => only negative numbers
+        // - 1 => positive and negative numbers
+        // - 1 => only positive numbers
+        int rangeNum = numElements % 3;
+        
+        // determine minimum and maximum ranges
+        int min = rangeNum == 2 ? 1 : -999;
+        int max = rangeNum == 0 ? -1 : 999;
+        
         // return the object
-        return rand.ints(numElements, -1000, 1001).toArray();
+        return rand.ints(numElements, min, max).toArray();
     }
 }
