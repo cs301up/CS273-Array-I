@@ -26,48 +26,38 @@ public class ArrayMain {
         /////////////////////////////////////////////////////////////////
 
         // ***** CHECKPOINT 1 *****
-        // Print the numbers, followed by a line of dashes
+        // (No code needed.)
         
 
         // ***** CHECKPOINT 2 *****
-        // Compute/print the average of the numbers
+        
 
+        // ***** CHECKPOINT 3 *****
 
         //System.out.println("The average of the numbers is "+???);
 
         
-        // ***** CHECKPOINT 3 *****
-        // Set a breakpoint somewhere above and show the contents of the array
-        
-
         // ***** CHECKPOINT 4 *****
-        // Find/print the smallest number in the array
-
 
         //System.out.println("The minimum element is "+???);
 
 
         // ***** CHECKPOINT 5 *****
-        // Find/print the percentage of numbers that is even
-
 
         //System.out.println("The percentage of even numbers is "+???);
 
 
         // ***** CHECKPOINT 6 *****
-        // Compute/print the percentage of numbers in the range -300 to 300
-
 
         //System.out.println(
         //  "The percentage of numbers in the range -300..300 is "+???);
 
 
         // ***** CHECKPOINT 7 *****
-        // Sort the numbers and print them out
         
         
         // ***** CHECKPOINT 8 *****
-        // Print the sorted numbers up to 10 per line
+
     }
     
     private static int getNumElements() {
