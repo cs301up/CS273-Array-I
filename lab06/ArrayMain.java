@@ -77,10 +77,15 @@ public class ArrayMain {
         // set the seed, so that we always get the same "random" sequence
         rand.setSeed(38274899339428L);
         
-        // generate number that determines whether:
-        // - 0 => only negative numbers
-        // - 1 => positive and negative numbers
-        // - 1 => only positive numbers
+        // generate number that determines whether ...
+        // ... 0 => only negative numbers, ...
+        // ... 1 => positive and negative numbers, or ...
+        // ... 2 => only positive numbers.
+        // Rationale: if students initialize the minimum to 0 instead of >= 999, ...
+        // ... their code will work for the original range of -999 <-> 999 ...
+        // ... but not for 1 <-> 999. 
+        // The instructions say to try each checkpoint for 5 elements (% 3 = 2, so 1 <-> 999), ... 
+        // ... and then 31 elements (% 3 = 1, so -999 <-> 999). 
         int rangeNum = numElements % 3;
         
         // determine minimum and maximum ranges
